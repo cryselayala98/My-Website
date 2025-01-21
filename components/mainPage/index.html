@@ -8,14 +8,22 @@
     <title>My Web Portfolio</title>
 </head>
 <body>
-    <header>
+    <header id="intro-scroll-pointer">
+        <div id="open-menu">
+            <a href="#">
+                <img src="../../images/menu_128px.png" alt="">
+            </a>
+        </div>
         <nav>
-            <div class="logo"><a href="#">My Website</a></div>
+            <div id="close-menu">
+                <a href="#"><img src="../../images/close_128px.png" alt=""></a>
+            </div>
+            <div class="logo"><a href="#">Crisel Ayala</a></div>
             <ul>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#about-me-scroll-pointer">About me</a></li>
+                <li><a href="#skills-scroll-pointer">Skills</a></li>
+                <li><a href="#projects_scroll_pointer">Projects</a></li>
+                <li><a href="#work-experience-scroll-pointer">Work Experience</a></li>
             </ul>
         </nav>
         <section id="hero">
@@ -27,17 +35,21 @@
                     <p>I am a specialist in web application development,</p>
                     <p>passionate for science, knowledge and enduring projects.</p>
                 </div>
-                <button class="lime-yellow-button">Download CV</button>
-                <button class="gray-button">Contact me</button>
+                <a href="../../documents/resume_crisel_ayala.pdf" target="_blank">
+                    <button class="lime-yellow-button">Download CV</button>
+                </a>
+                <a href="#contact-me">
+                    <button class="gray-button">Contact me</button>
+                </a>
             </div>
             <div class="social-media">
                 <div class="icon">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/cryselayala98/" target="_blank">
                         <img src="../../images/linkedin_64px_black.png" alt="Linkedin">
                     </a>
                 </div>
                 <div class="icon">
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/cryselayala98" target="_blank">
                         <img src="../../images/github_64px_black.png" alt="Github">
                     </a>
                 </div>
@@ -46,12 +58,16 @@
             <img class="star-img1" src="../../images/star.png" alt="">
             <img class="star-img2" src="../../images/star.png" alt="">
             <div class="attributions"> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
-            
         </section>
+        <div id="return-button">
+            <a href="#intro-scroll-pointer">
+                <img src="../../images/arrow_64px_black.png" alt="">
+            </a>
+        </div>
     </header>
     <main>
         <section id="about-me">
-            <div class="custom-shape-divider-top">
+            <div id="about-me-scroll-pointer" class="custom-shape-divider-top">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path class="shape-fill"></path>
                 </svg>
@@ -68,7 +84,7 @@
                     <img src="../../images/developer-512px.png" alt="">
                 </div>
             </div>
-            <div class="custom-shape-divider-bottom">
+            <div id="skills-scroll-pointer" class="custom-shape-divider-bottom">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path class="shape-fill"></path>
                 </svg>
@@ -78,93 +94,101 @@
             <h1>Skills</h1>
             <div class="page-box">
                 <div id="icons-skills">
-                    <div class="logo">
-                        <img src="../../images/java-128px.png" alt="">
-                        <div class="content">
-                            <h3>Java</h3>
-                            <div class="certificate">
-                                <span class="bold">Certified by: </span><a target="_blank" href="#">Udemy</a>
-                            </div>
-                            <div class="projects-applied">
-                                <span class="bold">Applied in: </span><a target="_blank" href="#">Training Center</a>, <a target="_blank" href="#">Training Center</a>
-                            </div>
+                    <div class="skills-group">
+                        <h3>Languages</h3>
+                        <div class="logo">
+                            <img src="../../images/java-128px.png" alt="">
+                            <div class="content">Java</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/js-128px.png" alt="">
+                            <div class="content">Javascript</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/php-128px.png" alt="">
+                            <div class="content">PHP</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/ruby-128px.png" alt="">
+                            <div class="content">Ruby</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/html-128px.png" alt="">
+                            <div class="content">HTML</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/css-128px.png" alt="">
+                            <div class="content">CSS</div>
                         </div>
                     </div>
-                    <div class="logo">
+                    <div class="skills-group">
+                        <h3>Frameworks and Libraries</h3>
+                        <div class="logo">
                         <img src="../../images/spring-framework-128px.png" alt="">
                         <div class="content">Spring Framework</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/nodejs128px.png" alt="">
+                            <div class="content">NodeJs</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/aureliajs-128px.png" alt="">
+                            <div class="content">AureliaJS</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/codeigniter-128px.png" alt="">
+                            <div class="content">Codeigniter</div>
+                        </div>
                     </div>
-                    <div class="logo">
-                        <img src="../../images/js-128px.png" alt="">
-                        <div class="content">Javascript</div>
+                    <div class="skills-group">
+                        <h3>Databases</h3>
+                        <div class="logo">
+                            <img src="../../images/mysql-128px.png" alt="">
+                            <div class="content">MySql</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/postgres-128px.png" alt="">
+                            <div class="content">Postgres</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/sqlite-128px.png" alt="">
+                            <div class="content">SQLite</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/mongodb-128px.png" alt="">
+                            <div class="content">MongoDB</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/redis-128px.png" alt="">
+                            <div class="content">Redis</div>
+                        </div>
                     </div>
-                    <div class="logo">
-                        <img src="../../images/nodejs128px.png" alt="">
-                        <div class="content">NodeJs</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/aureliajs-128px.png" alt="">
-                        <div class="content">AureliaJS</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/php-128px.png" alt="">
-                        <div class="content">PHP</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/codeigniter-128px.png" alt="">
-                        <div class="content">Codeigniter</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/ruby-128px.png" alt="">
-                        <div class="content">Ruby</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/aws-128px.png" alt="">
-                        <div class="content">Amazon Web Services</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/mysql-128px.png" alt="">
-                        <div class="content">MySql</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/postgres-128px.png" alt="">
-                        <div class="content">Postgres</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/sqlite-128px.png" alt="">
-                        <div class="content">SQLite</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/mongodb-128px.png" alt="">
-                        <div class="content">MongoDB</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/redis-128px.png" alt="">
-                        <div class="content">Redis</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/html-128px.png" alt="">
-                        <div class="content">HTML</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/css-128px.png" alt="">
-                        <div class="content">CSS</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/git-128px.png" alt="">
-                        <div class="content">Git</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/github-128px.png" alt="">
-                        <div class="content">Github</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/gitlab-128px.png" alt="">
-                        <div class="content">GitLab</div>
-                    </div>
-                    <div class="logo">
-                        <img src="../../images/azure-128px.png" alt="">
-                        <div class="content">Azure DevOps</div>
+                    <div class="skills-group">
+                        <h3>Tools</h3>
+                        <div class="logo">
+                            <img src="../../images/aws-128px.png" alt="">
+                            <div class="content">Amazon Web Services</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/git-128px.png" alt="">
+                            <div class="content">Git</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/github-128px.png" alt="">
+                            <div class="content">Github</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/gitlab-128px.png" alt="">
+                            <div class="content">GitLab</div>
+                        </div>
+                        <div class="logo">
+                            <img src="../../images/azure-128px.png" alt="">
+                            <div class="content">Azure DevOps</div>
+                        </div>
+                        <div id="projects_scroll_pointer" class="logo">
+                            <img src="../../images/wordpress_logo_128px.png" alt="">
+                            <div class="content">Wordpress</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -353,24 +377,6 @@
                             <h3>Sispro</h3>
                             <p>Platform for ICFES exams management.</p>
                             <img class="decoration" src="../../images/flower.png" alt="">
-                        </div>  
-                        <div class="box pink-box">
-                            <div class="preview-webpage">
-                                <img  src="../../images/projects_visualizer/cvlac_ufps_1.png" alt="">
-                                <div class="square">
-                                    <a target="_blank" class="github-link" href="https://github.com/cryselayala98/hviufps/tree/master/application">
-                                        <img class="links" src="../../images/github_64px_black.png" alt="Github">
-                                        <div class="content">View Github</div>
-                                    </a>
-                                    <a target="_blank" class="website-link" href="#">
-                                        <img class="links" src="../../images/web_64px_black.png" alt="Visit website">
-                                        <div class="content">View Website</div>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3>CVLAC</h3>
-                            <p>Website for researches curriculum vitae management.</p>
-                            <img class="decoration" src="../../images/flower.png" alt="">
                         </div>        
                         <div class="box pink-box">
                             <div class="preview-webpage">
@@ -420,7 +426,7 @@
                             </div>
                             <h3>BlackJack</h3>
                             <!--p>No description</p-->
-                            <img class="decoration" src="../../images/flower.png" alt="">
+                            <img id="work-experience-scroll-pointer" class="decoration" src="../../images/flower.png" alt="">
                         </div>                                
                     </div>
                 </div>
@@ -431,48 +437,6 @@
             <div class="page-box">
                 <div class="timeline-section">
                     <div class="timeline-circle"></div>
-                    <div class="timeline-left">
-                        <div class="box">
-                            <div class="content"> 
-                                <h3 class="occupation">Software Engineer</h3>
-                                <div class="time">
-                                    <img src="../../images/calendar-32px-black.png" alt="">
-                                    september 2021 - march 2023
-                                </div>
-                                <div class="company">
-                                    At <span class="bold">Pragma</span>
-                                </div>
-                                <div class="ubication">
-                                    <img src="../../images/location-32px-black.png" alt="">
-                                    <span class="bold">Medellin</span>, Colombia
-                                </div>
-                                <div class="tasks">
-                                    <ul>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.</li>
-                                        <li>Donec convallis non tellus ac vestibulum. Sed commodo nisl leo, nec maximus purus tempor sed.</li>
-                                        <li> Aenean a ipsum at erat aliquet consequat.</li>
-                                        <li>Sed feugiat mi nec mauris dignissim, ut congue elit porttitor.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                        <li>Suspendisse sagittis et sapien id maximus.</li>
-                                    </ul>
-                                </div>
-                                <div class="tools">
-                                    <span class="bold">Technologies: </span> Java, Spring, Docker, AWS, Microservices.
-                                </div>
-                            </div>
-                            <div class="circles">
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
-                <div class="timeline-section">
-                    <div class="timeline-circle"></div>
                     <div class="timeline-right">
                         <div class="box">
                             <div class="circles">
@@ -486,28 +450,25 @@
                             <div class="content"> 
                                 <div class="time">
                                     <img src="../../images/calendar-32px-black.png" alt="">
-                                    september 2021 - march 2023
+                                    April 2023 - Now
                                 </div>
-                                <h3 class="occupation">Software Engineer</h3>
-                                <div class="company">
-                                    At <span class="bold">Pragma</span>
-                                </div>
-                                <div class="ubication">
+                                <h3 class="occupation">Freelancer Developer</h3>
+                                <!--div class="company">
+                                    At <span class="bold">No enterprise</span>
+                                </div-->
+                                <!--div class="ubication">
                                     <img src="../../images/location-32px-black.png" alt="">
-                                    <span class="bold">Medellin</span>, Colombia
-                                </div>
+                                    <span class="bold">City</span>, Country
+                                </div-->
                                 <div class="tasks">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.</li>
-                                        <li>Donec convallis non tellus ac vestibulum. Sed commodo nisl leo, nec maximus purus tempor sed.</li>
-                                        <li> Aenean a ipsum at erat aliquet consequat.</li>
-                                        <li>Sed feugiat mi nec mauris dignissim, ut congue elit porttitor.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                        <li>Suspendisse sagittis et sapien id maximus.</li>
+                                        <li>As a freelance web developer, I specialize in building measured and performance-driven websites tailored to client needs.</li>
+                                        <li>I leverage Java, Spring Boot, HTML, CSS, and JavaScript to create scalable and efficient solutions, and integrating databases.</li>
+                                        <li>My focus is on delivering high-quality, optimized, and user-friendly websites while continuously learning and adapting to the latest industry trends.</li>
                                     </ul>
                                 </div>
                                 <div class="tools">
-                                    <span class="bold">Technologies: </span> Java, Spring, Docker, AWS, Microservices.
+                                    <span class="bold">Technologies: </span>Java, Spring, Javascript, HTML, CSS, MySQL, Postgres, MongoDB
                                 </div>
                             </div>
                         </div>
@@ -518,13 +479,13 @@
                     <div class="timeline-left">
                         <div class="box">
                             <div class="content"> 
-                                <h3 class="occupation">Software Engineer</h3>
+                                <h3 class="occupation">Backend developer</h3>
                                 <div class="time">
                                     <img src="../../images/calendar-32px-black.png" alt="">
-                                    september 2021 - march 2023
+                                    November 2021 - March 2023
                                 </div>
                                 <div class="company">
-                                    At <span class="bold">Pragma</span>
+                                    At <span class="bold">Muverang</span>
                                 </div>
                                 <div class="ubication">
                                     <img src="../../images/location-32px-black.png" alt="">
@@ -532,16 +493,13 @@
                                 </div>
                                 <div class="tasks">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.</li>
-                                        <li>Donec convallis non tellus ac vestibulum. Sed commodo nisl leo, nec maximus purus tempor sed.</li>
-                                        <li> Aenean a ipsum at erat aliquet consequat.</li>
-                                        <li>Sed feugiat mi nec mauris dignissim, ut congue elit porttitor.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                        <li>Suspendisse sagittis et sapien id maximus.</li>
+                                        <li>I've been an integral part of the development team at Muverang, a startup dedicated to sustainable mobility solutions across various Colombian cities.</li>
+                                        <li>At Muverang, I contribute to the Impulsa team, focusing on equipping users with tools to facilitate seamless and efficient vehicle rentals tailored to their needs across multiple platforms. My responsibilities include providing support across various channels (website, transactional portal, Back-Office) and implementing new features to enhance service offerings. Additionally, I leverage external services such as AWS (S3, API Gateway, Lambdas, RDS, SQS, Cognito).</li>
+                                        <li>I also initiated the development of a Telegram BOT to streamline the plan activation and finalization process, incorporating features like Redis cache support and thread management.</li>
                                     </ul>
                                 </div>
                                 <div class="tools">
-                                    <span class="bold">Technologies: </span> Java, Spring, Docker, AWS, Microservices.
+                                    <span class="bold">Technologies: </span> Java, Spring, AWS Services, Microservices, Relational/Non Relational Databases
                                 </div>
                             </div>
                             <div class="circles">
@@ -568,11 +526,11 @@
                                 <div class="circle"></div>
                             </div>
                             <div class="content"> 
-                                <h3 class="occupation">Software Engineer</h3>
                                 <div class="time">
                                     <img src="../../images/calendar-32px-black.png" alt="">
-                                    september 2021 - march 2023
+                                    September 2021 - March 2023
                                 </div>
+                                <h3 class="occupation">Software Engineer</h3>
                                 <div class="company">
                                     At <span class="bold">Pragma</span>
                                 </div>
@@ -582,16 +540,91 @@
                                 </div>
                                 <div class="tasks">
                                     <ul>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.Suspendisse sagittis et sapien id maximus.</li>
-                                        <li>Donec convallis non tellus ac vestibulum. Sed commodo nisl leo, nec maximus purus tempor sed.</li>
-                                        <li> Aenean a ipsum at erat aliquet consequat.</li>
-                                        <li>Sed feugiat mi nec mauris dignissim, ut congue elit porttitor.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                        <li>Suspendisse sagittis et sapien id maximus.</li>
+                                        <li>As a member of the Growth and Ecosystems team, I provided support for internal projects such as the Bitacora platform, profile, and vacation management.</li>
+                                        <li>I developed new functionalities inside some internal projects mentioned above, applying hexagonal architecture to the backend, tools like spring cloud, security,clean code and non-relational databases, and enhancing my habilities in frontend side tools, using Javascript and Angular.</li>
                                     </ul>
                                 </div>
                                 <div class="tools">
-                                    <span class="bold">Technologies: </span> Java, Spring, Docker, AWS, Microservices.
+                                    <span class="bold">Technologies: </span> Java, Spring, Docker, AWS Services, Microservices,Relational/Non Relational Databases, Hexagonal architecture, clean code, Javascript, Angular
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-section">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-left">
+                        <div class="box">
+                            <div class="content"> 
+                                <h3 class="occupation">FullStack developer</h3>
+                                <div class="time">
+                                    <img src="../../images/calendar-32px-black.png" alt="">
+                                    January 2021 - September 2023
+                                </div>
+                                <div class="company">
+                                    At <span class="bold">RASI</span>
+                                </div>
+                                <div class="ubication">
+                                    <img src="../../images/location-32px-black.png" alt="">
+                                    <span class="bold">Cucuta</span>, Colombia
+                                </div>
+                                <div class="tasks">
+                                    <ul>
+                                        <li>RASI specializes in delivering development solutions to various organizations on a regional scale, alongside offering business process management and consulting services. I was responsible for developing tailored solutions to meet functional requirements for clients using the RASI MEDICAL web platform. This involved utilizing Java and Spring, along with handling persistent data and mapping using JPA and Hibernate. Additionally, I employed JavaScript and jQuery to enhance user interfaces. </li>
+                                        <li>I also contributed to developing functional solutions for clients on the RASI ERP web platform. This involved leveraging technologies such as Java, JSP, JavaScript, and jQuery, while applying design paterns like DAO/DTO. Furthermore, I managed database interactions efficiently using Postgres.</li>
+                                    </ul>
+                                </div>
+                                <div class="tools">
+                                    <span class="bold">Technologies: </span> Java, Spring, Javascript, Relational Databases, HTML, CSS, jQuery
+                                </div>
+                            </div>
+                            <div class="circles">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="timeline-section">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-right">
+                        <div class="box">
+                            <div class="circles">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="content"> 
+                                <h3 class="occupation">Software Developer</h3>
+                                <div class="time">
+                                    <img src="../../images/calendar-32px-black.png" alt="">
+                                    March 2019 - September 2019
+                                </div>
+                                <div class="company">
+                                    At <span class="bold">Plantar Project</span>
+                                </div>
+                                <div class="ubication">
+                                    <img src="../../images/location-32px-black.png" alt="">
+                                    <span class="bold">Cucuta</span>, Colombia
+                                </div>
+                                <div class="tasks">
+                                    <ul>
+                                        <li>PLANTAR is an initiative backed by the Government of Norte de Santander Department and facilitated by the University of Pamplona. The project aims to implement agroecological models to foster sustainable development and enhance crop competitiveness among families across various municipalities. Leveraging Information and Communication Technologies (ICT), I contributed to the project's development team, undertaking the following tasks:</li>
+                                        <li>Designed and developed the PLANTAR Project website using WordPress, HTML, CSS and JavaScript. <a href="https://www.unipamplona.edu.co/proyectoplantar/">Visit site</a></li>
+                                        <li>Executed load and performance testing for the PLANTAR software using Apache JMeter to ensure optimal functionality and performance.</li>
+                                        <li>Conducted analysis and design documentation for the PLANTAR software. </li>
+                                        <li>Created an alert management application to monitor weather stations in six municipalities of Norte de Santander. This involved utilizing Grafana, PHP, and SQL.</li>
+                                    </ul>
+                                </div>
+                                <div class="tools">
+                                    <span class="bold">Technologies: </span> PHP, Grafana, Wordpress, HTML, CSS Javascript, Apache JMeter, Software Analysis and design
                                 </div>
                             </div>
                         </div>
@@ -633,9 +666,8 @@
                 <div class="role">Software Engineer</div>
             </div>
             <div class="social-media">
-                <img src="../../images/linkedin_64px_white.png" alt="Linkedin">
-                <img src="../../images/github64px_white_2.png" alt="Github">
-                <img src="../../images/twitter_64px_white.png" alt="X">
+                <a target="_blank" href="https://www.linkedin.com/in/cryselayala98/"><img src="../../images/linkedin_64px_white.png" alt="Linkedin"></a>
+                <a target="_blank" href="https://github.com/cryselayala98"><img src="../../images/github64px_white_2.png" alt="Github"></a>
             </div>
         </div>
         <div id="copyright">©Copyright <span class="year">2024</span>. Made by <a target="_blank" href="https://www.linkedin.com/in/cryselayala98/">Crisel Ayala</a></div>
