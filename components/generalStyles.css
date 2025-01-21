@@ -126,35 +126,3 @@ html {
     font-weight: 900;
     font-style: italic;
 }
-
-/*GENERAL PROPERTIES*/
-body {
-    position: relative;
-    margin: 0;
-    background-color: black;
-    font-family: 'Poppins', Helvetica, sans-serif;
-    color: white;
-}
-
-a:link, a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    list-style: none;
-}
-
-.attributions {
-    display: none;
-}
-
-.bold {
-        font-weight: 600;
-        text-shadow: 1px 1px 2px black;
-}
