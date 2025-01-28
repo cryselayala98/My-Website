@@ -16,6 +16,8 @@ body {
     font-family: 'Poppins', Helvetica, sans-serif;
     color: white;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    
 }
 
 a:link, a:visited {
@@ -133,7 +135,7 @@ header {
             white-space: wrap;
             text-align: center;
 
-            & .myName {
+            & .my-name {
                 font-size: 2rem;
                 font-weight: 300;
                 margin-bottom: -2rem;
@@ -317,16 +319,6 @@ main {
                 }
             }
         }
-    
-        & .separator {
-            background-color: var(--pink);
-            height: 0;
-            width: 100%;
-            position: relative;
-            top: 0;
-            transition: height 0.5s ease;
-        }
-    
         & h1 {
             font-size: 5rem;
             letter-spacing: 5px;
@@ -353,8 +345,11 @@ main {
             
             & .content-img{
                 width: 45%;
+                padding: 0 2rem;
                 
                 & img {
+                    width: 100%;
+                    height: auto;
                     display: block;
                     margin: 0 auto;
                 }
@@ -369,6 +364,8 @@ main {
             font-size: 3.5rem;
             letter-spacing: 5px;
             font-weight: 600;
+            margin: 0 auto;
+            margin-bottom: 2rem ;
         }
 
         & .page-box {
@@ -397,6 +394,8 @@ main {
                     font-size: 2.5rem;
                     font-weight: 500;
                     text-decoration: underline;
+                    margin-top: 0;
+                    margin-bottom: 1rem;
                 }
     
                 & .logo {
@@ -611,6 +610,7 @@ main {
             min-height: 30vh;
             width: 100%;
             padding-top: 4rem;
+            overflow-wrap: break-word;
     
             & .timeline-section {
                 width: 100%;
@@ -670,7 +670,7 @@ main {
                     position: relative;
                     margin-bottom: 2rem;
 
-                    & h3 {
+                    & .occupation {
                         font-size: 1.5rem;
                         margin-top: 1.5rem ;
                         margin-bottom: 0;
@@ -724,7 +724,7 @@ main {
                 padding: 2rem 0;
 
                 & .box {
-                    left: 5rem;
+                    right: -4rem;
 
                     & .circle {                   
                         left: 65%;
@@ -760,7 +760,7 @@ main {
                 padding: 2rem 0;
 
                 & .box {
-                    right: -1.5rem;
+                    right: -2.5rem;
 
                     & .circle {
                     left: -20%;
@@ -895,7 +895,8 @@ footer {
     padding-top: 3rem;
     padding-bottom: 2.5rem;
     position: relative;
-    margin: 0 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     & #outro {
         width: 100%;
@@ -943,6 +944,289 @@ footer {
     }
 }
 
+/*LAPTOP - 1024px*/
+@media screen and (max-width: 1024px) {
+
+    header {
+        & #hero{
+
+            & .intro {
+                top: 25%;
+
+                & .role {
+                    font-size: 4rem;
+                    line-height: 5rem;
+                    margin-top: 1.5rem;
+                }
+
+                & .content {
+                    margin-top: 1rem;
+                }
+            }
+
+            & .social-media {
+                left: 0;
+                bottom: 2%;
+            }
+        } 
+    }
+
+    main {
+
+        & #about-me {
+
+            & h1 {
+                font-size: 3.5rem;
+                letter-spacing: 3px;
+            }
+
+            & .page-box {
+
+                & .content {
+                    width: 60%;
+                    font-size: 1rem;
+                    padding-left: 1.5rem;
+                }
+
+                & .content-img {
+                    width: 40%;
+                }
+            }
+        }
+
+        & #work-experience .page-box {
+            & .timeline-left{
+                & .box {
+                    left: 2rem;
+                }
+            }
+        }
+    }
+}
+
+/*TABLET - 768px*/
+@media screen and (max-width: 768px) {
+    header {
+        & nav {
+            & .logo {
+                width: 20%;
+                padding-left: 1.5rem;
+                & a {
+                    font-size: 1rem;
+                }
+            }
+
+            & ul {
+                column-gap: 1em;
+
+                & li {
+                    text-align: left;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        & #hero {
+            & .intro {
+                & button {
+                    margin-top: 2rem;
+                }
+            }
+            & .social-media  .icon {
+                width: 3.5rem;
+                height: 3.5rem;
+
+                & img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+
+            & .star-img1 {
+                top: 20%;
+            }
+        }
+
+        #return-button {
+            width: 3rem;
+            height: 3rem;
+            bottom: 1.5rem;
+            right: 1rem;
+
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    & main {
+        & #about-me{
+
+            & .custom-shape-divider-top, .custom-shape-divider-bottom {
+                & svg {
+                    height: 50px;
+                }
+            }
+
+            & .custom-shape-divider-top {
+                top: -49px;
+            }
+
+            & .page-box {
+                & .content {
+                    padding: 0 2rem;
+                    width: 100%;
+                }
+    
+                & .content-img {
+                    display: none;
+                }
+            }
+        }
+
+        & #skills .page-box {
+            & #icons-skills .skills-group {
+                margin-bottom: 2vh;
+
+                & h3 {
+                    font-size: 2rem;
+                }
+            }
+
+            & img {
+                width: 140px;
+            }
+        }
+
+        & #projects {
+
+            & .circles .circle:nth-child(-n + 4) {
+                display: none;
+            }
+        }
+
+        & #work-experience {
+            & .page-box {
+                padding-top: 0;
+
+                & .timeline-section {
+                    margin-top: 0;
+
+                    & .timeline-circle {
+                        display: none;
+                    }
+
+                    & .timeline-left, .timeline-right {
+                        width: 100%;
+                        border: 0;
+                        left: 0;
+                        padding-top: 0;
+
+                        & .box {
+                            left: 50%;
+                            transform: translateX(-50%);
+                            right: 0;
+
+                            & .circles {
+                                display: none;
+                            }
+
+                            & .content {
+                                margin: 0 0.8rem;
+                                width: 100%;
+
+                                & .time {
+                                    display: inline-block;
+                                    position: relative;
+                                    font-size: 0.9rem;
+                                    width: 40%;
+                                    margin-top: 1.5rem;
+                                }
+
+                                & .occupation {
+                                    display: inline-block;
+                                    position: relative;
+                                    font-size: 1.1rem;
+                                    width: 58%;
+                                    right: 0;
+                                    margin: 0;
+                                    margin-top: 1.5rem;
+                                    top: 0;
+                                    vertical-align: top;
+                                }
+
+                                & .company, .ubication {
+                                    text-align: left;
+                                    font-size: 0.9rem;
+                                }
+
+                                & .tasks {
+                                    font-size: 0.9rem;
+                                    margin-top: 0.5rem;
+                                    margin-left: 0.8rem;
+
+                                    & li {
+                                        margin-bottom: 0.5rem;
+                                    }
+                                }
+
+                                & .tools {
+                                    font-size: 0.9rem;
+                                    margin-bottom: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+
+                    & .timeline-right {
+                        margin-right: 0;
+
+                        & .occupation {
+                            text-align: left;
+                        }
+                    }
+
+                    & .timeline-left {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        & #contact-me .page-box {
+            & .content{
+
+                & h1 {
+                    font-size: 2.5rem;
+                    letter-spacing: 2px;
+                }
+                
+                & .description {
+                    font-size: 1rem;
+                    width: 100%;
+                }
+
+                & form {
+                    margin-top: 1rem;
+                    width: 100%;
+                    padding-left: 0;
+
+                    & input, textarea {
+                        font-size: 1rem;
+                    }
+
+                    & input {
+                        height: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*PHONE*/
 @media screen and (max-width: 426px) {
     header {
 
@@ -996,18 +1280,220 @@ footer {
         }
 
         & #hero {
-/*problems here*/
-                & .role {
-                    font-size: 1rem;
+                & .intro {
+                    top: 13%;
+
+                    & .my-name {
+                        font-size: 1.5rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    & .role {
+                        font-size: 3.5rem;
+                        letter-spacing: 3px;
+                        line-height: 3.5rem;
+                    }
+
+                    & .content {
+                        padding: 0 1rem;
+                        margin-top: 1rem;
+
+                        & p {
+                            display: inline;
+                        }
+                    }
+
+                    & button {
+                        width: 8rem;
+                        height: 2.5rem;
+                        font-size: 12px;
+                        margin-top: 1.5rem;
+                    }
+
+                    & button:nth-child(1) {
+                        margin-right: 0.3rem;
+                    }
+
+                    & button:nth-child(1) {
+                        margin-left: 0.3rem;
+                    }
+                } 
+
+                & .social-media {
+                    left: 0;
+                    display: block;
+                    width: 100%;
+
+                    & .icon {
+                        width: 3rem;
+                        height: 3rem;
+                        position: relative;
+                        left: 20%;
+                        top: 1rem;
+
+                        & img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+
+                    & .icon:nth-child(1){
+                        position: absolute;
+                        z-index: 1;
+                    }
+
+                    .info {
+                        width: 50%;
+                        position: relative;
+                        left: 43%;
+                        bottom: 1rem;
+                    }
                 }
+
+                & .star-img1, .star-img2 {
+                    display: none;
+                }            
             }
     }
 
-    & header:has(#open-menu a:focus)  {
+    header:has(#open-menu a:focus)  {
         & nav {
             transform: translatex(0%);
             display: block;
             transition: 1s;
+        }
+    }
+
+    main {
+
+        & #about-me {
+            & h1{
+                padding: 0 2rem;
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+        }
+
+        & #skills {
+            & h1 {
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+        }
+
+        & #projects {
+            & h1 {
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+
+            & .page-box {
+
+                & .circles .circle:nth-child(-n + 8) {
+                    display: none;
+                }
+
+                & .content {
+                    & .boxes .box {
+                        width: 18rem;
+                        min-height: 45vh;
+
+                        & .preview-webpage {
+                            & img:not(.links) {
+                                height: 170px;
+                            }
+                        }
+
+                        & h3 {
+                            font-size: 1rem;
+                        }
+
+                        & p {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        & #work-experience {
+            
+            & h1{
+                letter-spacing: 2px;
+                font-size: 2.5rem;
+            }
+
+            & .timeline-section {
+                & .timeline-left, .timeline-right {
+
+                    & .box {
+                        padding: 0 1rem;
+
+                        & .content {
+                            padding-bottom: 1rem;
+
+                            & .occupation {
+                                width: 55% !important;
+                            }
+
+                            & .time {
+                                font-size: 0.8rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & #contact-me .page-box {
+
+            & .circles {
+                width: 15%;
+            }
+            & .content {
+                margin-left: 1rem;
+
+                & h1 {
+                    font-size: 2rem;
+                    text-align: left;
+                }
+
+                & .description {
+                    font-size: 0.9rem;
+                    text-align: justify;
+                }
+
+                & form {
+                    & input, textarea {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
+            & .paper-clip {
+                display: none;
+            }
+        }
+    }
+
+    footer {
+        & #outro {
+            & .social-media {
+                right: 2rem;
+
+                & img {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                & img:first-child {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        & #copyright {
+            font-size: 0.9rem;
         }
     }
 }
