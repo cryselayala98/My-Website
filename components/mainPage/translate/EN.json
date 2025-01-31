@@ -1,0 +1,21 @@
+{
+    "tr-nav-logo" : "Crisel Ayala",
+    "tr-nav-about-me" : "About me",
+    "tr-nav-skills" : "Skills",
+    "tr-nav-projects" : "Projects",
+    "tr-nav-work-experience" : "Work Experience",
+    "tr-hero-my-name" : "Crisel Ayala",
+    "tr-hero-role" : "Software Engineer",
+    "tr-hero-content" : "<p>Hi. This site is my Online portfolio.</p><p>I am a specialist in web application development,</p><p>passionate for science, knowledge and enduring projects.</p>",
+    "tr-hero-download-cv" : "Download CV",
+    "tr-hero-contact" : "Contact me",
+    "tr-hero-social-media" : "Visit my social media",
+    "tr-notification" : {
+        "tr-email-sent" : "Your message sent successfully!!"
+    },
+    "tr-about-me" : {
+        "tr-phrase1" : "Hi, I’m <span class=\"bold\">Crisel Ayala</span>, a Backend Developer with expertise in <span class=\"bold\">Java</span> and <span class=\"bold\">Spring</span>. I graduated with a bachelor’s degree in Systems Engineering from <span class=\"bold\">Francisco de Paula Santander University</span> in Colombia.",
+        "tr-phrase2" : "I specialize in building scalable, efficient systems and integrating them seamlessly with frontend solutions. While backend development is my primary focus, I’m also skilled in <span class=\"bold\">HTML</span>, <span class=\"bold\">CSS</span>, and <span class=\"bold\">JavaScript</span>, enabling me to bridge the gap between backend and frontend effectively.",
+        "tr-phrase3" : "I’m passionate about creating user-centric, functional, and visually appealing applications. Beyond coding, I enjoy learning new technologies, exploring design systems, and mastering languages like English and French. Let’s work together to bring innovative ideas to life!"
+    }
+}

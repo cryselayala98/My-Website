@@ -4,8 +4,21 @@
     --white: #ffffff;
     --purple: #918EFF;
     --pink: #FF619C;
+    --dark-pink: #d20a53;
     --gray: #383838;
 
+}
+
+@keyframes animation-notification {
+    0%{
+      bottom: -10rem;
+    }
+    20%, 80% {
+        bottom: 5%;
+    }
+    100% {
+        bottom: -10rem;
+    }
 }
 
 /*GENERAL PROPERTIES*/
@@ -17,7 +30,6 @@ body {
     color: white;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    
 }
 
 a:link, a:visited {
@@ -71,11 +83,44 @@ header {
         height: 4rem;
         position: fixed;
         z-index: 1;
+        padding: 0 1.5rem;
+
+        & #select-container-1 {
+            height: 100%;
+            position: absolute;
+            width: 3rem;
+        }
+
+        & select {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            border: 1px solid var(--black);
+            background-color: var(--black);
+            color: var(--white);
+            appearance: none;
+            outline: none;
+            font-size: inherit;
+            cursor: pointer;
+        }
+
+        & .select-arrow {
+            position: absolute;
+            pointer-events: none;
+            top: 50%;
+            right: 0;
+            transform: translate(0, -50%);
+            width: 12px;
+            height: 12px;
+            background-color: var(--gray);
+            clip-path: polygon(8% 17%, 0% 25%, 50% 84%, 100% 25%, 92% 17%, 50% 65%);
+        }
 
         & a {
             top: 50%;
-            transform: translateY(-50%);
             right: 1.5rem;
+            transform: translateY(-50%);
         }
     }
 
@@ -118,8 +163,36 @@ header {
             & li {
                 margin: auto 0;
             }
-        }
 
+            & #select-container-2 {
+                height: 100%;
+                position: relative;
+                width: 3rem;
+            }
+
+            & select {
+                width: 100%;
+                border: 1px solid var(--black);
+                background-color: var(--black);
+                color: var(--white);
+                appearance: none;
+                outline: none;
+                font-size: inherit;
+                cursor: pointer;
+            }
+
+            & .select-arrow {
+                position: absolute;
+                pointer-events: none;
+                top: 50%;
+                right: 0;
+                transform: translate(0, -50%);
+                width: 12px;
+                height: 12px;
+                background-color: var(--gray);
+                clip-path: polygon(8% 17%, 0% 25%, 50% 84%, 100% 25%, 92% 17%, 50% 65%);
+            }
+        }
     }
 
     & #hero { 
@@ -169,11 +242,13 @@ header {
 
             & .lime-yellow-button {
                 background-color:var(--lime-yellow);
+                cursor: pointer;
             }
 
             & .gray-button {
                 background-color:var(--gray);
                 color: var(--white);
+                cursor: pointer;
             }
         }
 
@@ -249,6 +324,27 @@ header {
         }
     }
 
+    & .notification {
+        display: none;
+        position: fixed;
+        width: 40%;
+        height: 4rem;
+        border-radius: 13px;
+        z-index: 4;
+        background-color: var(--pink);
+        font-size: 1.2rem;
+        border: 4px solid var(--dark-pink);
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        transition: all 1s ease;
+        line-height: 1rem;
+        animation: animation-notification 10s forwards;
+    }
 }
 
 main {
@@ -850,6 +946,7 @@ main {
                     vertical-align: top;
                     padding-right: 3rem;
                     padding-left: 1rem;
+                    position: relative;
     
                     & input, textarea {
                         display: block;
@@ -875,6 +972,24 @@ main {
                         margin-bottom: 3rem;
                         background-color: var(--lime-yellow);
                         font-weight: 600;
+                        cursor: pointer;
+                    }
+
+                    & #loading-container {
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(145, 142, 255, 0.726);
+
+                        & #svg-loading {
+                            position: absolute;
+                            left: 50%;
+                            top: 40%;
+                            transform: translate(-50%, -50%);
+                        }
                     }
                 }
             }
@@ -1047,7 +1162,7 @@ footer {
             }
         }
 
-        #return-button {
+        & #return-button {
             width: 3rem;
             height: 3rem;
             bottom: 1.5rem;
@@ -1057,6 +1172,10 @@ footer {
                 width: 25px;
                 height: 25px;
             }
+        }
+
+        & .notification {
+            font-size: 1rem;
         }
     }
 
@@ -1229,7 +1348,6 @@ footer {
 /*PHONE*/
 @media screen and (max-width: 426px) {
     header {
-
         & #open-menu, #close-menu {
             display: block;
         }
@@ -1270,6 +1388,10 @@ footer {
                 & li {
                     height: 3rem;
                     text-align: center;
+                }
+
+                & #select-container-2 {
+                    display: none;
                 }
             }
         }
@@ -1353,7 +1475,11 @@ footer {
                 & .star-img1, .star-img2 {
                     display: none;
                 }            
-            }
+        }
+
+        & .notification {
+            font-size: 0.8rem;
+        }
     }
 
     header:has(#open-menu a:focus)  {

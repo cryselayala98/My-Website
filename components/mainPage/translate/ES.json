@@ -1,0 +1,12 @@
+{
+    "tr-nav-logo" : "Crisel Ayala",
+    "tr-nav-about-me" : "Acerca",
+    "tr-nav-skills" : "Habilidades",
+    "tr-nav-projects" : "Proyectos",
+    "tr-nav-work-experience" : "Experiencia laboral",
+    "about-me" : {
+        "tr-phrase1" : "Hola, soy <span class=\"bold\">Crisel Ayala</span>, una desarrolladora Backend con experiencia en <span class=\"bold\">Java</span> y <span class=\"bold\">Spring</span>. Soy graduada de Ingeniería de Sistemas de <span class=\"bold\">Francisco de Paula Santander</span> en Colombia.",
+        "tr-phrase2" : "I specialize in building scalable, efficient systems and integrating them seamlessly with frontend solutions. While backend development is my primary focus, I’m also skilled in <span class=\"bold\">HTML</span>, <span class=\"bold\">CSS</span>, and <span class=\"bold\">JavaScript</span>, enabling me to bridge the gap between backend and frontend effectively.",
+        "tr-phrase3" : "I’m passionate about creating user-centric, functional, and visually appealing applications. Beyond coding, I enjoy learning new technologies, exploring design systems, and mastering languages like English and French. Let’s work together to bring innovative ideas to life!"
+    }
+}

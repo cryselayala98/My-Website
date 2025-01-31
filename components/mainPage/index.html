@@ -10,6 +10,14 @@
 <body>
     <header id="intro-scroll-pointer">
         <div id="open-menu">
+            <div id="select-container-1">
+                <select name="translate" id="translate">
+                    <option value="EN">EN</option>
+                    <option value="FR">FR</option>
+                    <option value="ES">ES</option>
+                </select>
+                <div class="select-arrow"></div>
+            </div>
             <a href="#">
                 <img src="../../images/menu_128px.png" alt="">
             </a>
@@ -18,28 +26,38 @@
             <div id="close-menu">
                 <a href="#"><img src="../../images/close_128px.png" alt=""></a>
             </div>
-            <div class="logo"><a href="#">Crisel Ayala</a></div>
+            <div class="logo" ><a href="#" id="tr-nav-logo">Crisel Ayala</a></div>
             <ul>
-                <li><a href="#about-me-scroll-pointer">About me</a></li>
-                <li><a href="#skills-scroll-pointer">Skills</a></li>
-                <li><a href="#projects_scroll_pointer">Projects</a></li>
-                <li><a href="#work-experience-scroll-pointer">Work Experience</a></li>
+                <li><a href="#about-me-scroll-pointer" id="tr-nav-about-me">About me</a></li>
+                <li><a href="#skills-scroll-pointer" id="tr-nav-skills">Skills</a></li>
+                <li><a href="#projects_scroll_pointer" id="tr-nav-projects">Projects</a></li>
+                <li><a href="#work-experience-scroll-pointer" id="tr-nav-work-experience">Work Experience</a></li>
+                <li>
+                    <div id="select-container-2">
+                        <select name="translate" id="translate">
+                            <option value="EN">EN</option>
+                            <option value="FR">FR</option>
+                            <option value="ES">ES</option>
+                        </select>
+                        <div class="select-arrow"></div>
+                    </div>
+                </li>
             </ul>
         </nav>
         <section id="hero">
             <div class="intro">
-                <div class="my-name">Crisel Ayala</div>
-                <div class="role">Software Engineer</div>
-                <div class="content">
+                <div class="my-name" id="tr-hero-my-name">Crisel Ayala</div>
+                <div class="role" id="tr-hero-role">Software Engineer</div>
+                <div class="content" id="tr-hero-content">
                     <p>Hi. This site is my Online portfolio.</p>
                     <p>I am a specialist in web application development,</p>
                     <p>passionate for science, knowledge and enduring projects.</p>
                 </div>
                 <a href="../../documents/resume_crisel_ayala.pdf" target="_blank">
-                    <button class="lime-yellow-button">Download CV</button>
+                    <button class="lime-yellow-button" id="tr-hero-download-cv">Download CV</button>
                 </a>
                 <a href="#contact-me">
-                    <button class="gray-button">Contact me</button>
+                    <button class="gray-button" id="tr-hero-contact">Contact me</button>
                 </a>
             </div>
             <div class="social-media">
@@ -53,7 +71,7 @@
                         <img src="../../images/github_64px_black.png" alt="Github">
                     </a>
                 </div>
-                <div class="info">Visit my social media</div>
+                <div class="info" id="tr-hero-social-media">Visit my social media</div>
             </div>
             <img class="star-img1" src="../../images/star.png" alt="">
             <img class="star-img2" src="../../images/star.png" alt="">
@@ -63,6 +81,8 @@
             <a href="#intro-scroll-pointer">
                 <img src="../../images/arrow_64px_black.png" alt="">
             </a>
+        </div>
+        <div class="notification" id="tr-notification">
         </div>
     </header>
     <main>
@@ -75,9 +95,9 @@
             <h1>About me</h1>
             <div class="page-box">
                 <div class="content">
-                    <p>Hi, I’m <span class="bold">Crisel Ayala</span>, a Backend Developer with expertise in <span class="bold">Java</span> and <span class="bold">Spring</span>. I graduated with a bachelor’s degree in Systems Engineering from <span class="bold">Francisco de Paula Santander University</span> in Colombia.</p>
-                    <p> I specialize in building scalable, efficient systems and integrating them seamlessly with frontend solutions. While backend development is my primary focus, I’m also skilled in <span class="bold">HTML</span>, <span class="bold">CSS</span>, and <span class="bold">JavaScript</span>, enabling me to bridge the gap between backend and frontend effectively.</p>
-                    <p>I’m passionate about creating user-centric, functional, and visually appealing applications. Beyond coding, I enjoy learning new technologies, exploring design systems, and mastering languages like English and French. Let’s work together to bring innovative ideas to life!</p>
+                    <p id="tr-phrase1">Hi, I’m <span class="bold">Crisel Ayala</span>, a Backend Developer with expertise in <span class="bold">Java</span> and <span class="bold">Spring</span>. I graduated with a bachelor’s degree in Systems Engineering from <span class="bold">Francisco de Paula Santander University</span> in Colombia.</p>
+                    <p id="tr-phrase2">I specialize in building scalable, efficient systems and integrating them seamlessly with frontend solutions. While backend development is my primary focus, I’m also skilled in <span class="bold">HTML</span>, <span class="bold">CSS</span>, and <span class="bold">JavaScript</span>, enabling me to bridge the gap between backend and frontend effectively.</p>
+                    <p id="tr-phrase3">I’m passionate about creating user-centric, functional, and visually appealing applications. Beyond coding, I enjoy learning new technologies, exploring design systems, and mastering languages like English and French. Let’s work together to bring innovative ideas to life!</p>
                 </div>
                 <div class="content-img">
                     <img src="../../images/developer-512px.png" alt="">
@@ -639,19 +659,69 @@
                     <div class="circle"></div>
                     <div class="circle"></div>
                     <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
                 </div>
                 <div class="content">
                     <h1>Contact me</h1>
                     <div class="description">
-                        Please don't hesitate to reach out by filling out the form below. I'll respond to your message promptly.
+                        Please don't hesitate to reach out by filling out the form below. I'll respond to your message promptly. You also can visit my social media.
                     </div>
-                    <form action="#">
-                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <form id="contact-form" action="#">
+                        <input type="text"  name="name" id="name" placeholder="Enter your name">
                         <input type="email" name="email" id="email" placeholder="Enter your email">
                         <textarea name="message" id="message" placeholder="Enter your message"></textarea>
                         <input type="submit" value="Submit">
+                        <div id="loading-container">
+                            <svg id="svg-loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="200" height="200" style="shape-rendering: auto; display: block; background: rgba(255, 255, 255, 0);" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g transform="rotate(0 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="-0.9166666666666666s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g transform="rotate(30 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="-0.8333333333333334s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g transform="rotate(60 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="-0.75s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g transform="rotate(90 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="-0.6666666666666666s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g transform="rotate(120 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="-0.5833333333333334s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g transform="rotate(150 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="-0.5s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g transform="rotate(180 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="-0.4166666666666667s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g transform="rotate(210 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="-0.3333333333333333s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g transform="rotate(240 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="-0.25s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g transform="rotate(270 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="-0.16666666666666666s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g transform="rotate(300 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="-0.08333333333333333s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g transform="rotate(330 50 50)">
+                                <rect fill="#413cff" height="11" width="11" ry="5.5" rx="5.5" y="15.5" x="44.5">
+                                  <animate repeatCount="indefinite" begin="0s" dur="1s" keyTimes="0;1" values="1;0" attributeName="opacity"></animate>
+                                </rect>
+                              </g><g></g></g>
+                            </svg>
+                        </div>
                     </form>
                 </div>
                 <img class="paper-clip" src="../../images/paper-clip.png" alt="">
@@ -671,7 +741,6 @@
         </div>
         <div id="copyright">©Copyright <span class="year">2024</span>. Made by <a target="_blank" href="https://www.linkedin.com/in/cryselayala98/">Crisel Ayala</a></div>
     </footer>
-
-    <script src="../mainPage/index.js"></script>
+    <script type="module" src="../mainPage/js/index.js"></script>
 </body>
 </html>
