@@ -1,0 +1,182 @@
+{
+    "tr-nav-logo" : "Crisel Ayala",
+    "tr-nav-about-me" : "À propos",
+    "tr-nav-skills" : "Compétences",
+    "tr-nav-projects" : "Projets",
+    "tr-nav-work-experience" : "expériences de travail",
+    "tr-hero-my-name" : "Crisel Ayala",
+    "tr-hero-role" : "Ingénieur logiciel",
+    "tr-hero-content" : "<p>Bonjour, ce site est mon portfolio en ligne.</p><p>Je suis spécialiste en développement d'applications web,</p><p>passionné par la science, la connaissance et les projets durables.</p>",
+    "tr-hero-download-cv" : "Télécharger le CV",
+    "tr-hero-contact" : "Contactez-moi",
+    "tr-hero-social-media" : "Visitez mes réseaux sociaux",
+    "tr-notification" : {
+        "tr-email-sent" : "Votre message a été envoyé avec succès!!"
+    },
+    "tr-title-about-me": "À propos",
+    "tr-about-me" : {
+        "tr-phrase1" : "Salut, je suis <span class=\"bold\">Crisel Ayala</span>, un développeur backend avec une expertise dans <span class=\"bold\">Java</span> et <span class=\"bold\">Spring</span>. J'ai obtenu un baccalauréat en ingénierie des logiciels de<span class=\"bold\">l'Université Francisco de Paula Santander</span> en Colombie.",
+        "tr-phrase2" : "Je me spécialise dans la création de systèmes évolutifs et efficaces et dans leur intégration transparente avec des solutions front-end. Bien que le développement back-end soit mon objectif principal, je suis également compétent dans <span class=\"bold\">HTML</span>, <span class=\"bold\">CSS</span>, et <span class=\"bold\">JavaScript</span>, me permettant de combler efficacement le fossé entre le backend et le frontend.",
+        "tr-phrase3" : "Je suis passionné par la création d’applications centrées sur l’utilisateur, fonctionnelles et visuellement attrayantes. Au-delà du codage, j’aime apprendre de nouvelles technologies, explorer les systèmes de conception et maîtriser des langues comme l’anglais et le français. Travaillons ensemble pour donner vie à des idées innovantes!"
+    },
+    "tr-title-skills": "Compétences",
+    "tr-skills-languages-title": "Langages",
+    "tr-skills-languages": {
+        "tr-language-1": "Java",
+        "tr-language-2": "Javascript",
+        "tr-language-3": "PHP",
+        "tr-language-4": "Ruby",
+        "tr-language-5": "HTML",
+        "tr-language-6": "CSS"
+    },
+    "tr-skills-frameworks-title": "Frameworks et bibliothèques",
+    "tr-skills-frameworks": {
+        "tr-framework-1": "Spring Framework",
+        "tr-framework-2": "NodeJs",
+        "tr-framework-3": "AureliaJS",
+        "tr-framework-4": "Codeigniter"
+    },
+    "tr-skills-databases-title": "Bases de données",
+    "tr-skills-databases": {
+        "tr-database-1": "MySql",
+        "tr-database-2": "Postgres",
+        "tr-database-3": "SQLite",
+        "tr-database-4": "MongoDB",
+        "tr-database-5": "Redis"
+    },
+    "tr-skills-tools-title": "Outils",
+    "tr-skills-tools": {
+        "tr-tool-1": "Amazon Web Services",
+        "tr-tool-2": "Git",
+        "tr-tool-3": "Github",
+        "tr-tool-4": "GitLab",
+        "tr-tool-5": "Azure DevOps",
+        "tr-tool-6": "Wordpress"
+    },
+    "tr-title-projects": "Projets",
+    "tr-projects": {
+        "tr-project-1": {
+            "tr-project-1-github": "Voir Github",
+            "tr-project-1-website": "Voir Website",
+            "tr-project-1-title": "Training Center V2",
+            "tr-project-1-description": "Apprentissage de la programmation pour les écoles et plate-forme de formation à la programmation compétitive."
+        },
+        "tr-project-2": {
+            "tr-project-2-github": "Voir Github",
+            "tr-project-2-title": "Imgfreepublic",
+            "tr-project-2-description": "Site Web de partage d'images comme Imgur."
+        },
+        "tr-project-3": {
+            "tr-project-3-github": "Voir Github",
+            "tr-project-3-title": "Geo Extensión UFPS",
+            "tr-project-3-description": "Plateforme de visualisation des projets d'extension de l'UFPS."
+        },
+        "tr-project-4": {
+            "tr-project-4-github": "Voir Github",
+            "tr-project-4-title": "Spring Framework client management api",
+            "tr-project-4-description": "API pour la gestion des utilisateurs."
+        },
+        "tr-project-5": {
+            "tr-project-5-github": "Voir Github",
+            "tr-project-5-website": "Voir Website",
+            "tr-project-5-title": "Javascript mini projects"
+        },
+        "tr-project-6": {
+            "tr-project-6-github": "Voir Github",
+            "tr-project-6-title": "Word Search"
+        },
+        "tr-project-7": {
+            "tr-project-7-github": "Voir Github",
+            "tr-project-7-title": "Problems ICPC",
+            "tr-project-7-description": "Code source des problèmes ICPC divisé par thèmes."
+        },
+        "tr-project-8": {
+            "tr-project-8-github": "Voir Github",
+            "tr-project-8-website": "Voir Website",
+            "tr-project-8-title": "My Website"
+        },
+        "tr-project-9": {
+            "tr-project-9-github": "Voir Github",
+            "tr-project-9-title": "SistColegio",
+            "tr-project-9-description": "Plateforme de gestion des écoles comme les notes, les cours et les différents utilisateurs."
+        },
+        "tr-project-10": {
+            "tr-project-10-github": "Voir Github",
+            "tr-project-10-title": "Client management (NodeJS)",
+            "tr-project-10-description": "Site Web réalisé pour le cours Node JS de l'Université Tecnológico de Antioquia."
+        },
+        "tr-project-11": {
+            "tr-project-11-github": "Voir Github",
+            "tr-project-11-title": "Sispro",
+            "tr-project-11-description": "Plateforme de gestion des examens ICFES."
+        },
+        "tr-project-12": {
+            "tr-project-12-github": "Voir Github",
+            "tr-project-12-title": "CVLAC",
+            "tr-project-12-description": "Site web pour la gestion des curriculum vitae des chercheurs."
+        },
+        "tr-project-13": {
+            "tr-project-13-github": "Voir Github",
+            "tr-project-13-website": "Voir Website",
+            "tr-project-13-title": "FreeCodeCamp CSS projects"
+        },
+        "tr-project-14": {
+            "tr-project-14-github": "Voir Github",
+            "tr-project-14-website": "JAR",
+            "tr-project-14-title": "BlackJack"
+        }
+    },
+    "tr-title-work-experience": "Expériences de travail",
+    "tr-work-experience": {
+        "tr-work-experience-1": {
+            "tr-work-experience-1-date": "Avril 2023 - Maintenant",
+            "tr-work-experience-1-occupation": "Développeur Developer",
+            "tr-work-experience-1-tasks": "<li>En tant que développeur Web indépendant, je me spécialise dans la création de sites Web mesurés et axés sur les performances, adaptés aux besoins des clients.</li><li>J'utilise Java, Spring Boot, HTML, CSS et JavaScript pour créer des solutions évolutives et efficaces.</li><li>Mon objectif est de fournir des sites Web de haute qualité, optimisés et conviviaux tout en apprenant et en m'adaptant continuellement aux dernières tendances du secteur.</li>",
+            "tr-work-experience-1-tools": "<span class=\"bold\">Technologies: </span>Java, Spring, Javascript, HTML, CSS, MySQL, Postgres, MongoDB"
+        },
+        "tr-work-experience-2": {
+            "tr-work-experience-2-date": "Novembre 2021 - Mars 2023",
+            "tr-work-experience-2-occupation": "Développeur Backend",
+            "tr-work-experience-2-company": "Dans <span class=\"bold\">Muverang",
+            "tr-work-experience-2-city": "<span class=\"bold\">Medellin</span>, Colombie",
+            "tr-work-experience-2-tasks": "<li>Je fais partie intégrante de l'équipe de développement de Muverang, une startup dédiée aux solutions de mobilité durable dans diverses villes colombiennes.</li><li>AÀ Muverang, j'ai contribué à l'équipe Impulsa, en me concentrant sur la fourniture aux utilisateurs d'outils pour faciliter des locations de véhicules transparentes et efficaces adaptées à leurs besoins sur plusieurs plateformes. Mes responsabilités comprenaient la fourniture d'un support sur différents canaux (site Web, portail transactionnel, Back-Office) et la mise en œuvre de nouvelles fonctionnalités pour améliorer les offres de services, en tirant parti de services externes tels que AWS (S3, API Gateway, Lambdas, RDS, SQS, Cognito).</li><li>J'ai également initié le développement d'un Telegram BOT pour rationaliser le processus d'activation et de finalisation du plan, en intégrant des fonctionnalités telles que la prise en charge du cache Redis et la gestion des threads.</li>",
+            "tr-work-experience-2-tools": "<span class=\"bold\">Technologies: </span> Java, Spring, AWS Services, Microservices, Relational / Non Relational Databases"
+        },
+        "tr-work-experience-3": {
+            "tr-work-experience-3-date": "Septembre 2021 - Mars 2023",
+            "tr-work-experience-3-occupation": "Ingénieur logiciel",
+            "tr-work-experience-3-company": "Dans <span class=\"bold\">Pragma</span>",
+            "tr-work-experience-3-city": "<span class=\"bold\">Medellin</span>, Colombie",
+            "tr-work-experience-3-tasks": "<li>En tant que membre de l'équipe Croissance et Écosystèmes, j'ai apporté mon soutien à des projets internes tels que la plateforme Bitacora, le profil et la gestion des vacances.</li><li>J'ai développé de nouvelles fonctionnalités dans certains projets internes mentionnés ci-dessus, en appliquant une architecture hexagonale au backend, des outils comme Spring Cloud, la sécurité, le code propre et les bases de données non relationnelles, et en améliorant mes compétences dans les outils côté frontend, en utilisant Javascript et Angular.</li>",
+            "tr-work-experience-3-tools": "<span class=\"bold\">Technologies: </span> Java, Spring, Docker, AWS Services, Microservices,Relational/Non Relational Databases, Hexagonal architecture, clean code, Javascript, Angular"
+        },
+        "tr-work-experience-4": {
+            "tr-work-experience-4-date": "Janvier 2021 - Septembre 2023",
+            "tr-work-experience-4-occupation": "Développeur FullStack",
+            "tr-work-experience-4-company": "Dans <span class=\"bold\">RASI</span>",
+            "tr-work-experience-4-city": "<span class=\"bold\">Cucuta</span>, Colombie",
+            "tr-work-experience-4-tasks": "<li>RASI est spécialisé dans la fourniture de solutions de développement à diverses organisations à l'échelle régionale, en plus d'offrir des services de gestion des processus d'affaires et de conseil. J'étais responsable du développement de solutions sur mesure pour répondre aux exigences fonctionnelles des clients utilisant la plateforme Web RASI MEDICAL. Cela impliquait l'utilisation de Java et Spring, ainsi que la gestion des données persistantes et le mappage à l'aide de JPA et Hibernate. De plus, j'ai utilisé JavaScript et jQuery pour améliorer les interfaces utilisateur.</li><li>J'ai également contribué au développement de solutions fonctionnelles pour les clients sur la plateforme web RASI ERP. Cela impliquait de tirer parti de technologies telles que Java, JSP, JavaScript et jQuery, tout en appliquant des modèles de conception tels que DAO/DTO. De plus, j'ai géré efficacement les interactions avec les bases de données à l'aide de Postgres.</li>",
+            "tr-work-experience-4-tools": "<span class=\"bold\">Technologies: </span> Java, Spring, Javascript, Relational Databases, HTML, CSS, jQuery"
+        },
+        "tr-work-experience-5": {
+            "tr-work-experience-5-date": "Mars 2019 - Septembre 2019",
+            "tr-work-experience-5-occupation": "Développeur de logiciels",
+            "tr-work-experience-5-company": "Dans <span class=\"bold\">Plantar Project</span>",
+            "tr-work-experience-5-city": "<span class=\"bold\">Cucuta</span>, Colombie</p>",
+            "tr-work-experience-5-tasks": "<li>PLANTAR est une initiative soutenue par le gouvernement du département de Norte de Santander et facilitée par l'Université de Pampelune. Le projet vise à mettre en œuvre des modèles agroécologiques pour favoriser le développement durable et améliorer la compétitivité des cultures entre les familles de diverses municipalités. En tirant parti des technologies de l'information et de la communication (TIC), j'ai contribué à l'équipe de développement du projet, en effectuant les tâches suivantes:</li><li>Conception et développement du site Web du projet PLANTAR en utilisant WordPress, HTML, CSS et JavaScript. <a href=\"https://www.unipamplona.edu.co/proyectoplantar/\">Visitez le site</a></li><li>Exécution de tests de charge et de performances pour le logiciel PLANTAR à l'aide d'Apache JMeter pour garantir une fonctionnalité et des performances optimales.</li><li>Analyse et documentation de conception réalisées pour le logiciel PLANTAR.</li><li>Création d'une application de gestion des alertes pour surveiller les stations météorologiques de six municipalités du Norte de Santander. Cela a nécessité l'utilisation de Grafana, PHP et SQL.</li>",
+            "tr-work-experience-5-tools": "<span class=\"bold\">Technologies: </span> PHP, Grafana, Wordpress, HTML, CSS Javascript, Apache JMeter, Software Analysis and design"
+        }
+    },
+    "tr-title-contact": "Contactez-moi",
+    "tr-contact-description": "N'hésitez pas à me contacter en remplissant le formulaire ci-dessous. Je répondrai rapidement à votre message. Vous pouvez également visiter mes réseaux sociaux.",
+    "tr-contact-form": {
+        "tr-contact-form-name": "Entrez votre nom",
+        "tr-contact-form-email": "Entrez votre email",
+        "tr-contact-form-message": "Entrez votre message",
+        "tr-contact-form-submit": "Soumettre"
+    },
+    "tr-footer-name": "Crisel Ayala",
+    "tr-footer-role": "Ingénieur logiciel",
+    "tr-footer-copyright": "Réalisé par <a target=\"_blank\" href=\"https://www.linkedin.com/in/cryselayala98/\">Crisel Ayala</a>"
+
+}

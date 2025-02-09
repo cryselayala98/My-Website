@@ -12,10 +12,10 @@ const sendEmail = async () => {
 
   DocumentFunctions.showLoading();
 
-    const email = document.querySelector("#contact-form #email").value;
-    const fromName = document.querySelector("#contact-form #name").value;
+    const email = document.querySelector(".contact-form .email").value;
+    const fromName = document.querySelector(".contact-form .name").value;
     const toName = "Crisel Ayala";
-    const message = document.querySelector("#contact-form #message").value;
+    const message = document.querySelector(".contact-form .message").value;
     const emailJSServiceID = "service_gmail";
     const MesswageTemplateID = "templateContactCris";
 
@@ -29,9 +29,9 @@ const sendEmail = async () => {
     emailjs.send(emailJSServiceID, MesswageTemplateID, params)
 
     .then(async res => {
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("message").value = "";
+        document.querySelector(".name").value = "";
+        document.querySelector(".email").value = "";
+        document.querySelector(".message").value = "";
         DocumentFunctions.hideLoading();
 
         const keyTypeNotification = Translate.typeNotification.EMAIL_SENT;
@@ -46,7 +46,7 @@ const sendEmail = async () => {
 export const settingEmailJS = () => {
     emailServiceInit();
 
-    const submitFormContact = document.querySelector("#contact-form input[type=submit]");
+    const submitFormContact = document.querySelector(".contact-form input[type=submit]");
 
     submitFormContact.addEventListener("click", (event) =>{
         event.preventDefault();

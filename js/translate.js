@@ -1,3 +1,5 @@
+import * as DocumentFunctions from "./documentFunctions.js";
+
 let currentLanguage = 'EN';
 
 const languages = Object.freeze({
@@ -23,7 +25,7 @@ const validateLanguage = (language) => {
 
 const translateElementContent = (elementIdentifier, phraseTranslated) => {
     const element = document.getElementById(elementIdentifier);
-    element.innerHTML = phraseTranslated;
+    if(element) element.innerHTML = phraseTranslated;
 }
 
 const iterateTranslateObj = (jsonObj) => {
@@ -56,9 +58,29 @@ const openTranslatedJson = async (language) => {
     }
 }
 
-const processTranslate = (event) => {
-    const languageOFChange = event.target.value;
-    
+const translateContactFormItems = (JSONObject) => {
+    const formText = JSONObject ["tr-contact-form"];
+    document.querySelector(".name").placeholder = formText["tr-contact-form-name"];
+    document.querySelector(".email").placeholder = formText["tr-contact-form-email"];
+    document.querySelector(".message").placeholder = formText["tr-contact-form-message"];
+
+    const submitFormContact = document.querySelector(".contact-form input[type=submit]");
+    submitFormContact.value = formText["tr-contact-form-submit"];
+}
+
+const obtainBrowserlanguage = () => {
+    const language = navigator.language.split("-")[0].toUpperCase();
+    return language;
+}
+
+const chargeTranslate = () => {
+    const languageOFChange = obtainBrowserlanguage();
+    processTranslate(languageOFChange);
+}
+
+
+
+const processTranslate = (languageOFChange) => {
     if (currentLanguage === languageOFChange) return;
     
     if(validateLanguage(languageOFChange)){
@@ -68,12 +90,20 @@ const processTranslate = (event) => {
         .then((JSONObject) => {
 
             iterateTranslateObj(JSONObject);
+            translateContactFormItems(JSONObject);
+
+            DocumentFunctions.refreshTranslateDropdown(currentLanguage);
 
         }).catch(error => {
             console.log(error);
-        });
-        
+        });   
     }
+}
+
+const eventTranslate = (event) => {
+    
+    const languageOFChange = event.target.value; 
+    processTranslate(languageOFChange);
 }
 
 export const translateNotificationText = async (typeNotificationId) => {
@@ -81,7 +111,6 @@ export const translateNotificationText = async (typeNotificationId) => {
     try {
         const JSONObject = await openTranslatedJson(currentLanguage);
         const notificationMessage = JSONObject["tr-notification"][typeNotificationId];
-        console.log(notificationMessage);
 
         return notificationMessage;
     }catch(error) {
@@ -91,8 +120,10 @@ export const translateNotificationText = async (typeNotificationId) => {
 }
 
 export const setTranslateEvents = () => {
+    chargeTranslate();
+
     const selectTranslate1 = document.querySelector("#select-container-1 select");
     const selectTranslate2 = document.querySelector("#select-container-2 select");
-    selectTranslate1.addEventListener("change", processTranslate);
-    selectTranslate2.addEventListener("change", processTranslate);
+    selectTranslate1.addEventListener("change", eventTranslate);
+    selectTranslate2.addEventListener("change", eventTranslate);
 }
